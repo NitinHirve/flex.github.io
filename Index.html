@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding:0;
+            margin:0;
+        }
+        .mainContainer
+        {
+            width:100vw;
+            height:100vh;
+            display:grid;
+            place-content: center;
+            /* background-color: #e8fcf9; */
+            background-image:url(Images/pexels-instawalli-169789.jpg);
+           background-size:cover;
+            /* text-align:center; */
+        }
+        h2{
+            padding: 50px;
+            text-align:center;
+            font-family: 'Rubik', sans-serif;
+            color:white;
+        }
+        p{
+            text-align:center;
+            font-family: 'Rubik', sans-serif;font-weight: 400; color:white;
+            text-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.7);
+        }
+
+        .parents
+        {
+            width:80vw; height:auto;
+            display:flex;
+            justify-content:space-around;
+            /* margin:auto; */
+            flex-wrap:wrap;
+            transition:all 0.2 linear;
+            /* background-color:  #81dede; */
+        }
+        .child{height:200px;background-color: #b6d4fa; box-shadow: 0 0 13px grey;  
+               flex:1 1 200px; border-radius: 10px;
+            margin:20px;display:grid; place-content:center; 
+            background-image:url(Images/pexels-aleksandar-pasaric-3310691.jpg);
+            background-size:cover;}
+        .child:first-child{ 
+            /* background-color: #f4cef5; */
+            background-image:url(Images/High.jpg);
+            background-size:cover;
+        }
+        .child:last-child{
+            /* background-color: #92d18e; */
+            background-image:url(Images/pexels-freestocksorg-410734.jpg);
+            background-size:cover;
+        }
+        @media(max-width:768px){ .mainContainer{height:auto;}}
+
+        
+    </style>
+</head>
+<body>
+
+<div class="mainContainer">
+    <h2> Welcome to Pune !</h2>
+   <div class="parents">
+       <div class="child"> <p>Kondhwa</p></div>
+       <div style="background:  #fcc19f; background-image:url(Images/pexels-sanaan-mazhar-3075993.jpg);
+       background-size:cover;"class="child"><p>Katraj</p></div>
+       <div class="child"><p>Wanowarie</p></div>
+       <div class="child"><p>Hadapsar</p></div>
+   </div>
+
+</div>
+    
+</body>
+</html>
